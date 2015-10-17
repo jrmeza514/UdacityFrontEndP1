@@ -9,7 +9,6 @@ html {
 }
 
 .portfolio {
-    max-width: 900px;
     margin: auto;
 }
 
@@ -20,8 +19,8 @@ html {
 }
 
 .portfolio .main-content {
-}
 
+}
 .portfolio .header {
     padding: 1em;
     box-sizing: border-box;
@@ -34,7 +33,6 @@ html {
 
 .header .item.logo {
     width: 5em;
-    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5-8403GyrwAPbAiaL27o1FNoKTEmJPxZtc-wTw7F_aiQJdWiKBsjEaPQ");
     background-size: cover;
 }
 
@@ -56,10 +54,7 @@ html {
     width: 100%;
     overflow: hidden;
     height: 400px;
-    margin: auto;
     margin-top: 20px;
-    background-image: url("https://camo.githubusercontent.com/bbfa6a7e2115ac8e0d635a2c53a447885a7d9c2c/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3831363839392f313533393532342f31303764323638612d346430642d313165332d393464392d3139383930323561383630302e706e67");
-    background-size: cover;
 }
 
 .portfolio .featured-work {
@@ -68,7 +63,7 @@ html {
 }
 
 .portfolio .featured-work > .title {
-    color: #BCBBBB;
+    color: #bcbbbb;
 }
 
 .portfolio .featured-work .item {
@@ -81,24 +76,11 @@ html {
 
 .portfolio .featured-work .item .image {
     position: relative;
-    width: 100%;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.portfolio .featured-work .item.appify .image {
-    background-image: url("http://www.radmade.com/content/img/portfolio/03.jpg");
-}
-
-.portfolio .featured-work .item.sunflower .image {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQ6hg1xzR3Nv9bvdyI2MD90Nq08ahHH1zw8Mr0dIUq2o2TVfZ");
-}
-
-.portfolio .featured-work .item.bokeh .image {
-    background-image: url("http://7-themes.com/data_images/out/30/6870065-bokeh-photography-wallpaper.jpg");
+    margin-left: 0;
+    padding: 0;
 }
 
 .portfolio .featured-work .item .title {
@@ -106,13 +88,17 @@ html {
     color: #494a39;
 }
 
-@media screen and (max-width: 900px) and (min-width: 751px) {
+@media screen and (max-width: 1000px) and (min-width: 751px) {
     .portfolio .featured-work .item {
         display: inline-block;
         width: 45%;
         margin: 2%;
         margin-bottom: 50px;
     }
+    .portfolio .banner {
+        height: 300px;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -121,5 +107,8 @@ html {
         width: 80%;
         margin: auto;
         margin-bottom: 50px;
+    }
+    .portfolio .banner {
+        height: 200px;
     }
 }
